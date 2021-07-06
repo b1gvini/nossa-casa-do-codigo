@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: nossaCasaDoCodigo
+datasources:
+  default:
+    url: ${DB_URL:`jdbc:mysql://localhost:3306/kotlin_casa_do_codigo?createDatabaseIfNotExist=true&serverTimezone=UTC`}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    dialect: MYSQL
+jpa.default.properties.hibernate.hbm2ddl.auto: update
